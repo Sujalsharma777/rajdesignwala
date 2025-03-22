@@ -5,45 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhajan sandhiya</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body>
-    <nav
-        class="sm:flex sm:flex-row  items-center sm:justify-between sm:items-center  sm:h-14  sm:p-4 bg-gray-700 overflow-hidden ">
+<body class="bg-gradient-to-t from-black to-gray-700 ">
 
-        <div class="flex justify-center">
-            <a href="#home">
-                <img src="./Assist/logo-2.png
-                        " alt="RajDesignWala" class="w-full h-20 bg-none  sm:h-14">
-            </a>
-        </div>
-        <ul class="sm:flex flex justify-center items-center flex-col sm:flex-row ">
-            <a href="#home">
-                <li class="text-white hover:text-black  hover:bg-[#ffbe00]  mx-6 p-5 ">
-                    Home
-                </li>
-            </a>
-            <a href="#work">
-                <li class="text-white hover:text-black hover:bg-[#ffbe00]  mx-6 p-5 ">
-                    Work
-                </li>
-            </a>
-            <a href="#about"></a>
-            <li class="text-white hover:text-black  hover:bg-[#ffbe00]  mx-6 p-5 ">
-                About
-            </li></a>
-            <a href="#contact">
-                <li class="text-blue-400 font-extrabold hover:text-black  hover:bg-[#ffbe00]   mx-6 p-5 ">
-                    Contact
-                    Us
-                </li>
-            </a>
-        </ul>
-    </nav>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/dist/navbar.html");
+        });
+    </script>
 
     <!-- all images  -->
-    <div class="p-10   bg-gradient-to-t from-black to-gray-700 ">
+    <div class="p-10   ">
 
         <div class=" *:w-full *:mb-1 overflow-hidden *:rounded-2xl columns-3xs">
             <img src="../Assist/Website Photos/Abhar Post/1.jpg" alt="Image not found">
@@ -68,67 +47,12 @@
         </div>
     </div>
 
-    <footer
-        class=" w-full bg-gradient-to-t from-black to-gray-700 p-5 my-2 grid grid-cols-1 gap-10 sm:grid-cols-3 sm:shadow-2xs sm:shadow-black *:text-white ">
-        <!-- THIS IS NAME DISCRIPTION  -->
-        <div class="w-46 ">
-            <h1 class="font-black text-2xl my-2 "><a href="#">Raj Design Wala</a></h1>
-            <p class=" text-sm  tracking-wide text-left antialiased text-pretty ">"Expert in graphic
-                design,
-                posters, social media, invitations, and spiritual event designs for all occasions."</p>
-            <lu class="list-none flex my-2">
-                <li class="mr-5 hover:text-white  "><a href="https://www.facebook.com/raj.bhanopiya.31"><img
-                            src="../Assist/facebook (1).png" alt=""></a>
-                </li>
-                <li class="mx-5 hover:text-white  "><a
-                        href="https://www.instagram.com/raj.designwala?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
-                            src="../Assist/instagram (4).png" alt=""></a></li>
-                <li class="mx-5 hover:text-white "><a href="https://wa.me/message/ZBBM6ADNIBIQK1"><img
-                            src="../Assist/whatsapp (2).png" alt=""></a></li>
-            </lu>
-        </div>
-        <!-- THIS IS ABOUT SERVICE -->
-        <div>
-            <lu class="list-none text-left">
-                <li class="font-bold text-base/8 underline text-gray-400">Service</li>
-                <a href="#">
-                    <li class="hover:text-white hover:underline">Graphic Design</li>
-                </a>
-                <a href="#">
-                    <li class="hover:text-white hover:underline">Post Design</li>
-                </a>
-                <a href="#">
-                    <li class="hover:text-white hover:underline">Motion Video </li>
-                </a>
-                <a href="">
-                    <li class="hover:text-white hover:underline">Flex Design</li>
-                </a>
-                <a href="">
-                    <li class="hover:text-white hover:underline">Social Media Graphic</li>
-                </a>
-                <a href="">
-                    <li class="hover:text-white hover:underline">Website Design & Development</li>
-                </a>
-            </lu>
-        </div>
-        <!-- THIS IS CONTACT -->
-        <div>
-            <lu>
-                <p class="font-bold text-base/8 underline">Contact Us</p>
-                <a href="">
-                    <li class="hover:text-white hover:underline">Nagda Jaction,Dis:Ujjain 456335</li>
-                </a>
-                <a href="">
-                    <li class="hover:text-white hover:underline">+91 8349184658</li>
-                </a>
-                <a href="">
-                    <li class="hover:text-white hover:underline">rajbanopiya@gmail.com</li>
-                </a>
-            </lu>
-        </div>
-
-
-    </footer>
+    <div id="Footer-placeholder"></div>
+    <script>
+        $(document).ready(function () {
+            $("#Footer-placeholder").load("/dist/footer-Bar.html");
+        });
+    </script>
 </body>
 
 </html>
